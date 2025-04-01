@@ -19,7 +19,7 @@ namespace cmangos_module
         }
         else
         {
-            sLog.outError(std::string("Failed to open configuration file " + filename).c_str());
+//            sLog.outError(std::string("Failed to open configuration file " + filename).c_str());
             return false;
         }
     }
