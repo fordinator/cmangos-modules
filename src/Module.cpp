@@ -220,6 +220,6 @@ namespace cmangos_module
     void Module::()
     {
         sLog.outString("Initializing %s module", name.c_str());
-        OnWorldInitialize();
+        OnInitialize();
     }
 }
