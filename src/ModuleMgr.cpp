@@ -33,11 +33,11 @@ namespace cmangos_module
         for (Module* mod : modules)
         {
             mod->LoadConfig();
-            mod->OnWorldPreInitialized();
+            mod->OnWorldPred();
         }
     }
 
-    void ModuleMgr::OnWorldInitialized()
+    void ModuleMgr::OnInitialized()
     {
         for (Module* mod : modules)
         {
