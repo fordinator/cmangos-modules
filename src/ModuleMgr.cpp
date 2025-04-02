@@ -37,11 +37,11 @@ namespace cmangos_module
         }
     }
 
-    void ModuleMgr::OnWorldInitialized()
+     void ModuleMgr::OnWorldInitialized()
     {
         for (Module* mod : modules)
         {
-            mod->OnInitialize();
+            mod->Initialize();
             mod->OnWorldInitialized();
         }
     }
