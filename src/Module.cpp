@@ -217,9 +217,9 @@ namespace cmangos_module
         }
     }
 
-    void Module::Initialize()
+    void Module::()
     {
         sLog.outString("Initializing %s module", name.c_str());
-        OnInitialize();
+        OnWorldInitialize();
     }
 }
