@@ -33,7 +33,7 @@ namespace cmangos_module
         for (Module* mod : modules)
         {
             mod->LoadConfig();
-            mod->OnWorldPred();
+            mod->OnWorldPreInitialized();
         }
     }
 
